@@ -1,7 +1,7 @@
 interface Store {
     String STORE_NAME = "SuperMart";
     String STORE_ADDRESS = "Koramangala 123 block";
-    void purchaseItem(String itemId);
+    void purchaseItem(String itemId);//abstract method
     default void printReceipt(String transactionId){
         System.out.println("Transaction ID : "+transactionId);
         System.out.println("Thank you for shopping at : "+STORE_NAME);

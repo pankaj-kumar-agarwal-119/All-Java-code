@@ -2,7 +2,7 @@
 interface Course {
     int MAX_ENROLLMENT = 30;//final + static + public
     int MIN_INROLLMENT = 1;
-    void enrollStudent(String studentName);
+    void enrollStudent(String studentName);//abstract method
     default void printCourseDetails(){
         System.out.println("The course details goes here...");
     }
