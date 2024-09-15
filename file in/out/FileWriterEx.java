@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-class A3 {
+class FileWriterEx {
 
     public static void main(String args[]) {
         File file = new File("example.txt");
@@ -20,6 +20,7 @@ class A3 {
             //Write content to the file
             FileWriter writer = new FileWriter("example.txt");
             writer.write("India is full of diversity. We all have to live with harmony");
+            writer.write("National bird is peacock");
             writer.close();
             System.out.println("Successfully written the file");
         } catch (IOException e) {

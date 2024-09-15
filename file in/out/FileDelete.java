@@ -4,7 +4,7 @@ import java.io.File;
 /*
  * delete file in java
  */
-class A5 {
+class FileDelete {
     public static void main(String[] args) {
         File file = new File("example.txt");
         if(file.delete()){

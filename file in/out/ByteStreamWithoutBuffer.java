@@ -16,7 +16,7 @@ import java.io.FileWriter;
  * 
  * In this example we will read the file in byte forat in buffer
  */
-class A6 {
+class ByteStreamWithoutBuffer {
 
     public static void main(String[] args) {
         try {

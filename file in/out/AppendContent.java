@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-class A4 {
+class AppendContent {
 
     public static void main(String args[]) {
         File file = new File("example.txt");

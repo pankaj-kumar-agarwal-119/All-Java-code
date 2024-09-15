@@ -4,7 +4,7 @@
 //Working with file creating in java
 import java.io.File;
 import java.io.IOException;
-class A2{
+class FileProperties{
     public static void main(String args[]){
         File file = new File("example.txt");
         try {
