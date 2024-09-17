@@ -1,0 +1,35 @@
+We have different types of databases : oracle , mysql , postgres , db2 (RDBMS)
+mongoDb , cassandra
+
+JDBC : java database connectivity
+When we want to connect java with any of the databases we need driver.It acts as a bridge between the java prohram and database 
+We have 4 types of JDBC drivers
+1)JDBC-ODBC bridge (legacy , not recommended). Latest java versions do not support odbc
+2)Native-api driver : This driver convers JDBC calls into database specific native calls 
+3)Network protocol driver : This is cloud solution . This is database independent. (requires middleware)
+4)Thin driver : Thin driver (most popular , no native library required)
+
+Note : When selecting the JDBC driver , consider factors such as peformance requirements , databse compatibility , easy of deployment
+
+-----------
+7 steps for jdbc connection : 
+1)import package (java.sql.*)
+2)load driver + register
+Class.forName()
+3)Establish connection
+Connection con = new DriverManager.getConnection()
+4)create statement
+statement = con.createStatement()
+5)execute query
+ResultSet rs = st.executeQuery("") | st.executeUpdate()
+6)Process the ResultSet
+rs.next() : To go to nest row
+rs.getString(<column_number>) , rs.getInt(<column_number>)
+7)close the connection
+st.close();
+con.close();
+
+Eclipse : driver (download driver)
+
+
+
