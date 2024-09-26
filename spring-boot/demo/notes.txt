@@ -1,0 +1,46 @@
+Springboot is the module of spring where we can speed up the development.spring is not only a framework but it is an umbrella in itself.
+It just creates the production ready application.
+In springboot there is concept of auto configuration.It decreases the effort of developer.
+
+Note : Convention (List of steps) over configuration software design style
+
+Note : All dependencies in java gets installed in jar files.
+
+Example 1 :
+Suppose we have added the spring-boot-starter-jpa dependency in pom file.(package.json in javascript)
+If we are using the gradle build tool then all dependent jar files gets downloaded into
+the Mavan Repository
+
+Note : When we declare a dependency in pom file, spring boot checks it inside the classpath. If it
+finds it inside the class path then it will then configre it automatically
+
+
+Example 2 : 
+If we add a mysql connector dependency in pom file (pom.xml) then , springboot first checks it inside the 
+classpath. If it is present inside the classpath then it then configure it automatically
+
+Example 3: (downloads all the supporting dependencies)
+pom.xml
+spring-boot-starter-web + spring-boot-starter-jpa 
+spring-boot-starter-web : It will download all the dependencies like tomcat , jackson (we need to convert the data into json)
+spring-boot-starter-jpa  : Ii will then download jar files like : hibernate , spring-orm
+
+There are 4 ways to create the springboot application : 
+i)Create a maven project and add starter dependencies
+ii)Use spring initializr
+iii)Use IDE like STS (Spring tool suite)
+iv)Springboot command line interface
+
+Imp :
+Using the spring initializr
+https://start.spring.io/
+Project : Maven  
+Language : Java  
+Spring Boot : 3.3.4  
+Dependency : Spring web
+
+Clcik on generate
+Then fie -> import -> Maven -> Existing maven project
+
+Now in editor go to help -> Eclipse marketplace -> Spring tool (Install Spring tool 4)
+

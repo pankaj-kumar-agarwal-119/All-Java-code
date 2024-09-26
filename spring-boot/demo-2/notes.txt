@@ -1,0 +1,5 @@
+1)To create spring project in eclipse, we have to new -> others->sping boot -> spring starter project 
+->configute (Maven + java 21) -> Spring web select as dependency package
+
+Now create the application as usual
+
