@@ -6,11 +6,12 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-@Entity
-@Table(name="shops")
+@Entity//use to mark any class as Entity
+@Table(name="shops")//use to change the table details
 public class ShopEntity {
-	@Id
+	@Id //use to mark column as id (primary key)
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	//hibernate will automatically generate values for that using an internal sequence.
 	private int id;
 	private String shopName;
 	private int shopArea;
